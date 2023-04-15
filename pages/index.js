@@ -7,9 +7,213 @@ import Link from 'next/link'
 import { ImGithub } from "react-icons/im"
 import { ImLinkedin } from "react-icons/im"
 import { ImSphere } from "react-icons/im"
+import React, { useState } from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
 const lexend = Lexend({ subsets: ['latin'] })
+
+const MyLink = React.forwardRef(
+  (
+    { as, children, href, replace, scroll, shallow, passHref, ...rest }, // extract all next/link props and pass the rest to the anchor tag
+    ref,
+  ) => (
+    <Link as={as} href={href} passHref={passHref} replace={replace}>
+      {/* <a {...rest} ref={ref}> */}
+        {children}
+      {/* </a> */}
+    </Link>
+  ),
+);
+
+const Profile1 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/danika.png" width={306} height={306} alt="danika" />
+        ) : (
+          <Image src="/headshots/danika.png" width={306} height={306} alt="danika" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile2 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/elmer.png" width={306} height={306} alt="elmer" />
+        ) : (
+          <Image src="/headshots/elmer.png" width={306} height={306} alt="elmer" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile3 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/iris.png" width={306} height={306} alt="iris" />
+        ) : (
+          <Image src="/headshots/iris.png" width={306} height={306} alt="iris" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile4 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/keiko.png" width={306} height={306} alt="keiko" />
+        ) : (
+          <Image src="/headshots/keiko.png" width={306} height={306} alt="keiko" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile5 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/giancarlo.png" width={306} height={306} alt="giancarlo" />
+        ) : (
+          <Image src="/headshots/giancarlo.png" width={306} height={306} alt="giancarlo" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile6 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/herlan.png" width={306} height={306} alt="herlan" />
+        ) : (
+          <Image src="/headshots/herlan.png" width={306} height={306} alt="herlan" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile7 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/jane.png" width={306} height={306} alt="jane" />
+        ) : (
+          <Image src="/headshots/jane.png" width={306} height={306} alt="jane" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+
+const Profile8 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/joanne.png" width={306} height={306} alt="joanne" />
+        ) : (
+          <Image src="/headshots/joanne.png" width={306} height={306} alt="joanne" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
+
+const Profile9 = () => {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+  return (
+    <div
+      className="profile-image-wrapper"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <MyLink href="/">
+        {isHovering ? (
+          <Image src="/headshots-sport/yuenki.png"  width={306} height={306} object-fit= "contain"
+         alt="yuenki"/>
+        ) : (
+          <Image src="/headshots/yuenki.png" className={'image'}width={306} height={306}  alt="yuenki" />
+        )}
+      </MyLink>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -67,6 +271,9 @@ export default function Home() {
             </div>
 
             <div className={styles.video}>
+            <video autoPlay loop muted controls = ''>
+            <source src="/Coala_1280x720px.mp4" />
+            </video>
             </div>
 
             <div className={styles.features} id="features">
@@ -94,13 +301,14 @@ export default function Home() {
               <h5 className={lexend.className}>Our amazing team that can make anything possible! </h5>
               <div className={styles.grid}>
                 <div     className={styles.card}>
-                <Image
+                {/* <Image
                 className={styles.profile}
                 src="/headshots/danika.png"
                 alt="danika"
                 width={306}
                 height={254}
-                />
+                /> */}
+                <Profile1 />
                  <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Danika Enad 
@@ -124,13 +332,14 @@ export default function Home() {
                 </div>
 
                 <div    className={styles.card}>
-                <Image
+                {/* <Image
                 className={styles.profile}
                 src="/headshots/elmer.png"
                 alt="elmer"
                 width={306}
                 height={254}
-                />
+                /> */}
+                <Profile2 />
                  <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Elmer Balbin 
@@ -153,13 +362,7 @@ export default function Home() {
                 </div>
 
                 <div  className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/iris.png"
-                alt="iris"
-                width={306}
-                height={254}
-                />
+                <Profile3 />
                  <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Iris Chen 
@@ -182,13 +385,7 @@ export default function Home() {
                 </div>
 
                 <div className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/keiko.png"
-                alt="keiko"
-                width={306}
-                height={254}
-                />
+                <Profile4 />
                  <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Keiko Shimizu 
@@ -211,13 +408,7 @@ export default function Home() {
                 </div>
 
                 <div  className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/giancarlo.png"
-                alt="giancarlo"
-                width={306}
-                height={254}
-                />
+                <Profile5 />
                   <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Giancarlo Cochella
@@ -240,13 +431,7 @@ export default function Home() {
                 </div>
 
                 <div  className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/herlan.png"
-                alt="herlan"
-                width={306}
-                height={254}
-                />
+                <Profile6 />
                   <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Herlan Wijaya
@@ -269,13 +454,7 @@ export default function Home() {
                 </div>
 
                 <div  className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/jane.jpg"
-                alt="jane"
-                width={306}
-                height={254}
-                />
+                <Profile7 />
                   <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Jane (Jeongeun) Choi
@@ -299,13 +478,7 @@ export default function Home() {
                 </div>
 
                 <div className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/joanne.png"
-                alt="jane"
-                width={306}
-                height={254}
-                />
+                <Profile8 />
                   <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Joanne (Kyungeun) Cho
@@ -329,13 +502,7 @@ export default function Home() {
                 </div>
 
                 <div  className={styles.card}>
-                <Image
-                className={styles.profile}
-                src="/headshots/yuenki.png"
-                alt="jane"
-                width={306}
-                height={254}
-                />
+                <Profile9 />
                 <div className={styles.profileText}>
                   <h4 className={lexend.className}>
                   Yuen Ki Hung
@@ -362,9 +529,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={styles.cta} id="prototpe">
+            <div className={styles.cta} id="prototpe" >
               <h2 className={lexend.className}>Give Coala a Try!</h2>
-              <div className={lexend.className}>Figma Prototype</div>
+              <div className={lexend.className}>
+              {/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwuxZxWDMT5G4R6dyflfBAr%2FDopamine-Figma%3Fpage-id%3D1726%253A138577%26node-id%3D1726-141368%26viewport%3D1417%252C683%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D1726%253A139111%26show-proto-sidebar%3D1" allowfullscreen></iframe> */}
+              </div>
             </div>
           </main>
           <footer className={styles.contact} id="contact">

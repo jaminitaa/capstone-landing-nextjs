@@ -51,7 +51,8 @@
   background-color: white;
   padding: 0 3rem;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  box-shadow: 0 0 20px rgba(0,0,0,.1)
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  box-sizing: border-box;
 }
 
 .description a {
@@ -124,6 +125,12 @@
 
 .introduction {
   padding: 0 3rem 0 0;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile {
@@ -313,3 +320,36 @@
   /* width:100vw; */
 }
 
+.cta {
+  background-image: url('../public/prototype-background.png');
+}
+
+
+/* .profile-image-wrapper {
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+.profile-image-wrapper .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover; 
+} */
+
+@media (max-width: 700px) {
+  .logo h1, .navwrapper {
+    display: none;
+  }
+ 
+  .description, .center, .tab {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(25%, auto));
+    width:  1100px;
+    max-width: 100%;
+  }
+
+}
