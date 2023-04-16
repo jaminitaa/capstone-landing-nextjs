@@ -8,6 +8,8 @@ import { ImGithub } from "react-icons/im"
 import { ImLinkedin } from "react-icons/im"
 import { ImSphere } from "react-icons/im"
 import React, { useState } from 'react';
+import YoutubeVideo from "./video.js"
+import Layout from "./layout.js";
 
 const lexend = Lexend({ subsets: ['latin'] })
 
@@ -36,9 +38,9 @@ const Profile1 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/danika.png" width={306} height={306} alt="danika" />
+          <Image src="/headshots-sport/danika.png" className={styles.image}  width={306} height={306} layout="responsive" alt="danika" />
         ) : (
-          <Image src="/headshots/danika.png" width={306} height={306} alt="danika" />
+          <Image src="/headshots/danika.png" className={styles.image} width={306} height={306} layout="responsive" alt="danika" />
         )}
       </MyLink>
     </div>
@@ -57,9 +59,9 @@ const Profile2 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/elmer.png" width={306} height={306} alt="elmer" />
+          <Image src="/headshots-sport/elmer.png" className={styles.image} width={306} height={306} layout="responsive" alt="elmer" />
         ) : (
-          <Image src="/headshots/elmer.png" width={306} height={306} alt="elmer" />
+          <Image src="/headshots/elmer.png" className={styles.image} width={306} height={306} layout="responsive" alt="elmer" />
         )}
       </MyLink>
     </div>
@@ -78,9 +80,9 @@ const Profile3 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/iris.png" width={306} height={306} alt="iris" />
+          <Image src="/headshots-sport/iris.png" className={styles.image} width={306} height={306} layout="responsive" alt="iris" />
         ) : (
-          <Image src="/headshots/iris.png" width={306} height={306} alt="iris" />
+          <Image src="/headshots/iris.png" className={styles.image} width={306} height={306} layout="responsive" alt="iris" />
         )}
       </MyLink>
     </div>
@@ -99,9 +101,9 @@ const Profile4 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/keiko.png" width={306} height={306} alt="keiko" />
+          <Image src="/headshots-sport/keiko.png" className={styles.image} width={306} height={306} layout="responsive" alt="keiko" />
         ) : (
-          <Image src="/headshots/keiko.png" width={306} height={306} alt="keiko" />
+          <Image src="/headshots/keiko.png" className={styles.image} width={306} height={306} layout="responsive" alt="keiko" />
         )}
       </MyLink>
     </div>
@@ -120,9 +122,9 @@ const Profile5 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/giancarlo.png" width={306} height={306} alt="giancarlo" />
+          <Image src="/headshots-sport/giancarlo.png" className={styles.image} width={306} height={306} layout="responsive" alt="giancarlo" />
         ) : (
-          <Image src="/headshots/giancarlo.png" width={306} height={306} alt="giancarlo" />
+          <Image src="/headshots/giancarlo.png" className={styles.image} width={306} height={306} layout="responsive" alt="giancarlo" />
         )}
       </MyLink>
     </div>
@@ -141,9 +143,9 @@ const Profile6 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/herlan.png" width={306} height={306} alt="herlan" />
+          <Image src="/headshots-sport/herlan.png" className={styles.image} width={306} height={306} layout="responsive" alt="herlan" />
         ) : (
-          <Image src="/headshots/herlan.png" width={306} height={306} alt="herlan" />
+          <Image src="/headshots/herlan.png" className={styles.image} width={306} height={306} layout="responsive" alt="herlan" />
         )}
       </MyLink>
     </div>
@@ -162,9 +164,9 @@ const Profile7 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/jane.png" width={306} height={306} alt="jane" />
+          <Image src="/headshots-sport/jane.png" className={styles.image} width={306} height={306} layout="responsive" alt="jane" />
         ) : (
-          <Image src="/headshots/jane.png" width={306} height={306} alt="jane" />
+          <Image src="/headshots/jane.png" className={styles.image} width={306} height={306} layout="responsive" alt="jane" />
         )}
       </MyLink>
     </div>
@@ -184,9 +186,9 @@ const Profile8 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/joanne.png" width={306} height={306} alt="joanne" />
+          <Image src="/headshots-sport/joanne.png" className={styles.image} width={306} height={306} layout="responsive" alt="joanne" />
         ) : (
-          <Image src="/headshots/joanne.png" width={306} height={306} alt="joanne" />
+          <Image src="/headshots/joanne.png" className={styles.image} width={306} height={306} layout="responsive" alt="joanne" />
         )}
       </MyLink>
     </div>
@@ -205,10 +207,10 @@ const Profile9 = () => {
     >
       <MyLink href="/">
         {isHovering ? (
-          <Image src="/headshots-sport/yuenki.png"  width={306} height={306} object-fit= "contain"
+          <Image src="/headshots-sport/yuenki.png"  className={styles.image} width={306} height={306} layout="responsive" object-fit= "contain"
          alt="yuenki"/>
         ) : (
-          <Image src="/headshots/yuenki.png" className={'image'}width={306} height={306}  alt="yuenki" />
+          <Image src="/headshots/yuenki.png" className={styles.image} width={306} height={306} layout="responsive" alt="yuenki" />
         )}
       </MyLink>
     </div>
@@ -217,7 +219,7 @@ const Profile9 = () => {
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Coala</title>
         <meta name="description" content="Generated by create next app" />
@@ -247,7 +249,7 @@ export default function Home() {
                     <a href="#prototype">Prototype</a> 
                     <a href="#contact">Contact</a>
                     </nav>
-                    <button className={styles.button}>View Proposal</button>
+                    <button className={`${styles.button} ${lexend.className} ${styles.proposalButton}`} >View Proposal</button>
                   </div>
           </header>
            </div>
@@ -259,7 +261,7 @@ export default function Home() {
               <div className={styles.introduction}>
                 <h3 className={lexend.className}>Helping Coaches to save time</h3>
                 <p className={lexend.className}>Spend more time helping students reach their full potential by focusing on providing quality coaching sessions with powerful and easy to use features!</p>
-                <button className={styles.button}>Try Coala</button>
+                <button className={`${styles.button} ${lexend.className} ${styles.ctaButton}`}>Try Coala</button>
               </div>
               <Image
                 className={styles.collage}
@@ -267,13 +269,15 @@ export default function Home() {
                 alt="collage"
                 width={700}
                 height={700}
+                layout="responsive"
                 />
             </div>
 
             <div className={styles.video}>
-            <video autoPlay loop muted controls = ''>
+            <YoutubeVideo />
+            {/* <video autoPlay loop muted controls = ''>
             <source src="/Coala_1280x720px.mp4" />
-            </video>
+            </video> */}
             </div>
 
             <div className={styles.features} id="features">
@@ -281,15 +285,15 @@ export default function Home() {
               <h5 className={lexend.className}>Introducing our personalized coaching solution! </h5>
               <div className={styles.tab}>
                 <div>
-                <h4 className={lexend.className}>Smart Curriculum</h4>
+                <h4 className={`${styles.featureTitle} ${lexend.className} `}>Smart Curriculum</h4>
                 <p className={lexend.className}>A personalized solution tailored for every coach to easily access the details and sample videos about each skill exercise required on a program.</p>
                 </div>
                 <Image
                 className={styles.curriculum}
                 src="/Curriculum.svg"
                 alt="Curriculum"
-                width={400}
-                height={400}
+                width={500}
+                height={500}
                 />
                 
               </div> 
@@ -545,7 +549,7 @@ export default function Home() {
                 <input className={lexend.className} type="text" id="telephone" name="lname" value="Telephone"></input>
                 <input className={lexend.className} type="text" id="email" name="email" value="Email"></input>
                 <input className={lexend.className} type="text" id="comment" name="comment" value="Comment"></input>
-                <input className={lexend.className} type="submit" value="Submit"></input>
+                <input className={`${styles.button} ${lexend.className} ${styles.submitButton}`} type="submit" value="Submit"></input>
                 </form>
               </div>
             </div>
@@ -560,9 +564,27 @@ export default function Home() {
                   />
                 <p className={lexend.className}>Boost your coaching efficiency</p>
                 <p className={lexend.className}>anywhere, anytime!</p>
+                <div  className={styles.footerMsg}>
+                <p className={lexend.className}>COMING SOON TO</p>
+                <Image  className={styles.stores}
+                        src="/AppleStore.svg"
+                        alt="Logo"
+                        width={30}
+                        height={30}
+                        priority
+                      />  
+                 <Image  className={styles.stores}
+                        src="/GooglePlay.svg"
+                        alt="Logo"
+                        width={30}
+                        height={30}
+                        priority
+                      />  
+                </div>
               </div>
+              <p className={`${styles.footerText} ${lexend.className} `}>© 2023 Team Dopamine. All Rights Reserved.</p>
             </footer>
         </div>
-    </>
+    </Layout>
   )
 }
