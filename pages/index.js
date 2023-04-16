@@ -26,6 +26,17 @@ const MyLink = React.forwardRef(
   ),
 );
 
+function openTab(featureName) {
+                // let i;
+                // let x = document.getElementsByClassName("tab");
+                // for (i = 0; i < x.length; i++) {
+                //   x[i].style.display = "none";  
+                // }
+                // document.getElementById(featureName).style.display = "block";  
+                console.log("tab clicked")
+              } 
+
+
 const Profile1 = () => {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
@@ -259,7 +270,7 @@ export default function Home() {
           
             <div className={styles.center}>
               <div className={styles.introduction}>
-                <h3 className={lexend.className}>Helping Coaches to save time</h3>
+                <h3 className={lexend.className}>Helping Coaches to <span className={styles.highlight1}> save time</span></h3>
                 <p className={lexend.className}>Spend more time helping students reach their full potential by focusing on providing quality coaching sessions with powerful and easy to use features!</p>
                 <button className={`${styles.button} ${lexend.className} ${styles.ctaButton}`}>Try Coala</button>
               </div>
@@ -281,11 +292,15 @@ export default function Home() {
             </div>
 
             <div className={styles.features} id="features">
-              <h2 className={lexend.className} >The Features</h2>
+              <h2 className={lexend.className} >The <span className={styles.underline}>Features</span></h2>
               <h5 className={lexend.className}>Introducing our personalized coaching solution! </h5>
-              <div className={styles.tab}>
+              {/* <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick={openTab('curriculum')}>Curriculum</button>
+                <button class="w3-bar-item w3-button" onclick={openTab('attendance')}>Attendance</button>
+              </div> */}
+              <div className={`${styles.tab} ${styles.curriculum}`} id="curriculum">
                 <div>
-                <h4 className={`${styles.featureTitle} ${lexend.className} `}>Smart Curriculum</h4>
+                <h4 className={`${styles.featureTitle} ${lexend.className} `}><span className={styles.highlight2}>Smart</span> Curriculum</h4>
                 <p className={lexend.className}>A personalized solution tailored for every coach to easily access the details and sample videos about each skill exercise required on a program.</p>
                 </div>
                 <Image
@@ -294,14 +309,30 @@ export default function Home() {
                 alt="Curriculum"
                 width={500}
                 height={500}
-                />
-                
+                />               
               </div> 
+              <div className={`${styles.tab} ${styles.attendance}`} id="attendance">
+                <div>
+                <h4 className={`${styles.featureTitle} ${lexend.className}`}>Attendance</h4>
+                <p className={lexend.className}>Say goodbye to time-consuming manual tracking!</p>
+                <p className={lexend.className}>Our streamlined solution not only simplifies the process but also keeps a record of each student's attendance history over time, allowing you to easily monitor and analyze their progress. </p>
+                </div>
+                <Image
+                className={styles.curriculum}
+                src="/Curriculum.svg"
+                alt="Curriculum"
+                width={500}
+                height={500}
+                />               
+              </div> 
+              <script type="text/javascript">
+              
+              </script>
             </div>
 
 
             <div className={styles.team} id="team">
-              <h2 className={lexend.className}>The Team</h2>
+              <h2 className={lexend.className}>The <span className={styles.highlight3}>Team</span></h2>
               <h5 className={lexend.className}>Our amazing team that can make anything possible! </h5>
               <div className={styles.grid}>
                 <div     className={styles.card}>
@@ -534,7 +565,7 @@ export default function Home() {
             </div>
 
             <div className={styles.cta} id="prototpe" >
-              <h2 className={lexend.className}>Give Coala a Try!</h2>
+              <h2 className={lexend.className}>Give <span className={styles.highlight4}>Coala a Try!</span></h2>
               <div className={lexend.className}>
               {/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwuxZxWDMT5G4R6dyflfBAr%2FDopamine-Figma%3Fpage-id%3D1726%253A138577%26node-id%3D1726-141368%26viewport%3D1417%252C683%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D1726%253A139111%26show-proto-sidebar%3D1" allowfullscreen></iframe> */}
               </div>

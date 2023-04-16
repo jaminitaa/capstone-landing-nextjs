@@ -135,6 +135,47 @@
   padding: 0 3rem 0 0;
 }
 
+.highlight1 {
+  position: absolute;
+  /* other styles (left, top, right, and padding) */
+  background-image: url('../public/highlight1.png');
+  background-size: cover;
+  min-height:80px;
+  padding-left: 1rem;
+}
+
+.underline {
+  position: absolute;
+  background-image: url('../public/underline.png');
+  background-size: cover;
+  max-height:25px;
+  padding-left: 1rem;
+}
+
+.highlight2 {
+  /* position: absolute; */
+  background-image: url('../public/highlight2.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 1rem;
+}
+
+.highlight3 {
+  /* position: absolute; */
+  background-image: url('../public/highlight3.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 1rem 2rem;
+}
+
+.highlight4 {
+  /* position: absolute; */
+  background-image: url('../public/highlight4.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 1.9rem 1.4rem;
+}
+
 .video {
   display: flex;
   align-items: center;
@@ -182,6 +223,10 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 1rem 0;
+}
+
+.attendance {
+  display: none;
 }
 
 .card {
