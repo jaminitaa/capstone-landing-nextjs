@@ -604,7 +604,7 @@ export default function Home() {
             <div className={styles.cta} id="prototpe" >
               <h2 className={lexend.className}>Give <span className={styles.highlight4}>Coala a Try!</span></h2>
               <div className={lexend.className}>
-              {/* <iframe className={styles.figma} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwuxZxWDMT5G4R6dyflfBAr%2FDopamine-Figma%3Fpage-id%3D1726%253A138577%26node-id%3D1726-141368%26viewport%3D1417%252C683%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D1726%253A139111%26show-proto-sidebar%3D1" allowfullscreen></iframe> */}
+              <iframe className={styles.figma} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwuxZxWDMT5G4R6dyflfBAr%2FDopamine-Figma%3Fpage-id%3D1726%253A138577%26node-id%3D1726-141368%26viewport%3D1417%252C683%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D1726%253A139111%26show-proto-sidebar%3D1" allowfullscreen></iframe>
               </div>
             </div>
           </main>
