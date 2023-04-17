@@ -1,9 +1,6 @@
 .wrapper {
   background: url('../public/background-grid.svg');
   background-repeat: no-repeat;
-  /* -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain; */
   background-size: contain;
   margin: 0;
   padding: 0;
@@ -14,9 +11,19 @@
   padding: 0;
 }
 
-.center{
+.center, .video{
   max-width: 1500px;
   margin: auto;
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  max-width: 1500px;
+  margin: auto;
+  display: block;
 }
 
 .h2 {
@@ -33,6 +40,10 @@
 .logo h1 {
   padding: 0 0 0 1rem;
   color: #404142;
+}
+
+.navigation a:hover {
+  color:#FE7F2D
 }
 
 .description h1 {
@@ -118,12 +129,7 @@
   max-width: 100%;
 }
 
-.center {
-  display: flex;
-  padding: 3rem;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .center h2, .features h2, .team h2, .cta h2{
   font-size: 3rem;
@@ -136,24 +142,22 @@
 }
 
 .highlight1 {
-  position: absolute;
-  /* other styles (left, top, right, and padding) */
   background-image: url('../public/highlight1.png');
   background-size: cover;
   min-height:80px;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .underline {
-  position: absolute;
   background-image: url('../public/underline.png');
-  background-size: cover;
-  max-height:25px;
-  padding-left: 1rem;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-height:1px;
+  padding: 0 2rem;
 }
 
 .highlight2 {
-  /* position: absolute; */
   background-image: url('../public/highlight2.png');
   background-size: cover;
   min-height:300px;
@@ -161,7 +165,6 @@
 }
 
 .highlight3 {
-  /* position: absolute; */
   background-image: url('../public/highlight3.png');
   background-size: cover;
   min-height:300px;
@@ -169,24 +172,56 @@
 }
 
 .highlight4 {
-  /* position: absolute; */
   background-image: url('../public/highlight4.png');
   background-size: cover;
   min-height:300px;
   padding: 1.9rem 1.4rem;
 }
 
-.video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.highlight5 {
+  background-image: url('../public/highlight5.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 1.9rem 1.4rem;
 }
+
+.highlight6 {
+  background-image: url('../public/highlight6.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 1.9rem .7rem;
+}
+
+.highlight7 {
+  background-image: url('../public/highlight7.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 1.9rem .7rem;
+}
+
+.highlight8 {
+  background-image: url('../public/highlight8.png');
+  background-size: cover;
+  min-height:300px;
+  padding: 3rem 1rem;
+}
+
 
 .profile {
   width: 100%;
   border-radius: 10pt 10pt 0 0;
 }
 
+.featureButtons {
+  display: flex wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  gap: 10px;
+}
+
+.featureButtons button{
+  margin: 0 .5rem;
+}
 
 .features {
   display: flex;
@@ -194,6 +229,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-bottom: #cbc9c9 solid 1.9px;
 }
 
 .featureTitle {
@@ -201,14 +237,43 @@
   font-weight: 500
 }
 
+/* .curriculum {
+  box-sizing: border-box;
+} */
+
 .tab {
   display:flex;
   padding: 3rem;
   justify-content: center;
   align-items: center;
-  border: 6px solid #BBA0EC;
+  /* border: 6px solid #BBA0EC; */
   border-radius: 20px;
-  background-color: rgba(179, 146, 229, 0.1)
+  /* background-color: rgba(179, 146, 229, 0.1) */
+}
+
+.curriculum {
+  background-color: rgba(179, 146, 229, 0.1);
+  border: 6px solid #BBA0EC;
+}
+
+.attendance {
+  background-color: rgba(240, 210, 122, 0.1);
+  border: 6px solid #F5D26A;
+}
+
+.skillEvaluation {
+  background-color: rgba(235, 145, 143, 0.1);
+  border: 6px solid #F98C8C;
+}
+
+.automatedReport {
+  background-color:rgba(191, 227, 1, 0.1);
+  border:6px solid #B5E593 ;
+}
+
+.studentManagement {
+  background-color:rgba(168, 219, 217, 0.1);
+  border:6px solid #9ADDDA ;
 }
 
 .team {
@@ -223,10 +288,6 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 1rem 0;
-}
-
-.attendance {
-  display: none;
 }
 
 .card {
@@ -276,7 +337,7 @@
 
 .cta {
   display: flex;
-  padding: 3rem;
+  padding: 3rem 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -300,7 +361,7 @@
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url('../public/footer-background.png');
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)) url('../public/footer-background.png');
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -345,87 +406,127 @@
   padding: 0 .5rem 0 1rem;
 }
 
-/* .tab{
-  position:relative;
+
+.curriculumButton {
+  background-color:rgba(179, 146, 229, 0.1);
+  border: #BBA0EC solid 4px;
+  border-radius:10px 10px 0 0;
+  border-bottom: none;
+  padding: 1rem 2rem;
+  font-size: 32;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
 }
 
-.tab li{
-  float:left;
-  overflow:hidden;
-  list-style-type: none;
-  display: block;
-  margin-right:6px;
-  border-radius:5px 5px 0 0;
-  left:100px;
+.attendanceButton {
+  background-color:rgba(240, 210, 122, 0.1);
+  border: #F5D26A solid 4px;
+  border-radius:10px 10px 0 0;
+  border-bottom: none;
+  padding: 1rem 2rem;
+  font-size: 32;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.skillEvaluationButton {
+  background-color:rgba(235, 145, 143, 0.1);
+  border: #F98C8C solid 4px;
+  border-radius:10px 10px 0 0;
+  border-bottom: none;
+  padding: 1rem 2rem;
+  font-size: 32;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.automatedReportButton {
+  background-color:rgba(191, 227, 1, 0.1);
+  border: #B5E593 solid 4px;
+  border-radius:10px 10px 0 0;
+  border-bottom: none;
+  padding: 1rem 2rem;
+  font-size: 32;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.studentManagementButton {
+  background-color:rgba(168, 219, 217, 0.1);
+  border:#9ADDDA  solid 4px;
+  border-radius:10px 10px 0 0;
+  border-bottom: none;
+  padding: 1rem 2rem;
+  font-size: 32;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.curriculumButton:hover,
+.curriculumButton:focus
+{
   cursor: pointer;
-  position: relative;
-  background: #BBA0EC;;  
-
-}
-
-.tab li a{
-  display:block;
-  text-decoration: none;
-  padding:10px;
-}
-
-.tab div{
-  z-index:0;
-  width:800px;
-  padding:5px;
-  position: absolute;
-  top:39px;
-  left:110px;
-  color: black;
-  background: white;
-  border-radius:10px;
-  border: 3px solid #BBA0EC;
-} */
-
-.tab li:hover{
   background-color:#BBA0EC;
+  transform: scale(1.1) translate(0, -4.5%);
 }
 
-.tab div:first-child{
-  z-index:1;
+.attendanceButton:hover,
+.attendanceButton:focus,
+.attendanceButton.active
+{
+  cursor: pointer;
+  background-color:#F5D26A;
+  transform: scale(1.1) translate(0, -4.5%);
+  /* transform: all .5s; */
+  /* border-top: 10px solid #F5D26A; */
 }
 
-.tab div:target{
-  z-index:2;
-  margin:0;
+.skillEvaluationButton:hover,
+.skillEvaluationButton:focus,
+.skillEvaluationButtonactive {
+  cursor: pointer;
+  background-color:#F98C8C;
+  transform: scale(1.1) translate(0, -4.5%);
 }
-.tab div:target + li{
-  background:#BBA0EC;
+
+.automatedReportButton:hover,
+.automatedReportButton:focus,
+.automatedReportButton.active {
+  cursor: pointer;
+  background-color:#B5E593;
+  transform: scale(1.1) translate(0, -4.5%);
 }
+
+.studentManagementButton:hover,
+.studentManagementButton:focus,
+.studentManagementButton.active {
+  cursor: pointer;
+  background-color: #9ADDDA;
+  transform: scale(1.1) translate(0, -4.5%);
+}
+
 
 .team {
   background-image: url('../public/background-grid2.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  /* -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; */
-  /* width:100vw; */
+  border-bottom: #cbc9c9 solid 1.9px;
 }
 
 .cta {
   background-image: url('../public/prototype-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: #cbc9c9 solid 1.9px;
 }
 
-
-
-/* .profile-image-wrapper {
-  width: 50vw;
-  height: 50vh;
-  position: relative;
+.figma {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 450px;
+  margin-top: 3rem;
 }
-.profile-image-wrapper .image {
-  width: 100%;
-  height: 100%;
-  position: relative !important;
-  object-fit: cover; 
-} */
+
 
 @media (max-width: 700px) {
   .logo h1, .navwrapper, .ctaButton  {
@@ -434,6 +535,21 @@
  
   .description, .center, .tab {
     flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+    padding: 1rem;
+    box-sizing:border-box;
+  }
+
+  .video {
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  .center, .features {
+    padding: 1rem;
   }
 
   .grid {
@@ -445,6 +561,35 @@
   .contact {
     display: flex;
     flex-direction: column;
+  }
+
+  .curriculumButton {
+    border-radius: 10px;
+    border: #BBA0EC solid 4px;
+  }
+
+  .attendanceButton {
+    border-radius: 10px;
+    border: #F5D26A solid 4px;
+  }
+
+  .skillEvaluationButton {
+    border-radius: 10px;
+    border: #F98C8C solid 4px;
+  }
+
+  .automatedReportButton {
+    border-radius: 10px;
+    border: #B5E593 solid 4px;
+  }
+
+  .studentManagementButton {
+    border-radius: 10px;
+    border: #9ADDDA solid 4px;
+  }
+
+  .featureButtons {
+    margin-bottom: 1rem;
   }
 
 }
