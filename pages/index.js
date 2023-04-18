@@ -293,7 +293,9 @@ export default function Home() {
             <div className={styles.video}>
             <ReactPlayer
             className={styles.reactplayer}
-            url='https://www.youtube.com/watch?v=6MtJNQR4oUM' />
+            url='https://www.youtube.com/watch?v=6MtJNQR4oUM'
+            width='1024px'
+            height='768px' />
             {/* <YoutubeVideo className={styles.youtubeVideo}/> */}
             {/* <video autoPlay loop muted controls = ''>
             <source src="/Coala_1280x720px.mp4" />
