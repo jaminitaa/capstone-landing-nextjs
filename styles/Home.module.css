@@ -617,6 +617,17 @@
     margin-right: 0;
   }
 
+  .introduction h3 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .introduction p {
+    margin-bottom: 40px;
+    font-size: 22px;
+    text-align: center;
+  }
+
   .tab {
     width: 100%;
     padding: 1rem;
@@ -624,7 +635,10 @@
   }
 
   .video {
+    margin: 40px auto;
     width:100%;
+    height: 400px;
+    overflow: hidden;
     box-sizing: border-box;
   }
 
@@ -652,8 +666,12 @@
 
   .featureTitle {
     margin: 2rem 0;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.3;
+  }
+
+  .featureDesc {
+    font-size: 20px;
   }
 
   .curriculumButton {
