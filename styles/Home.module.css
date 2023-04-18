@@ -20,6 +20,11 @@
   align-items: center;
 }
 
+.center {
+  gap: 140px;
+  padding: 100px 1rem;
+}
+
 .tab {
   max-width: 1500px;
   margin: auto;
@@ -51,22 +56,32 @@
   font-weight: 400
 }
 
-.description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.85rem;
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.headerWrapper {
   background-color: white;
   padding: 0 3rem;
   border-bottom: 1px solid rgba(0,0,0,.1);
   box-shadow: 0 0 20px rgba(0,0,0,.1);
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.description a {
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 0.85rem;
+  width: 100%;
+  max-width: 1500px;
+  height: 90px;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.description nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +94,8 @@
 
 .description nav {
   display: flex;
+  gap: 4rem;
+  margin-right: 4rem;
 }
 
 .navwrapper {
@@ -100,45 +117,51 @@
   border-radius: 6px;
   border: none;
   padding: .8rem 2.2rem;
-  font-size:1rem;
-  font-weight: 600
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .proposalButton {
+  display: flex;
   margin: 1rem 0  1rem 1rem;
 }
 
+.proposalButton a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+}
+
 .button:hover {
-  background-color: rgba(255, 117, 53,0.7)!important;
+  background-color: #ff924a;
+  cursor: pointer;
 }
 
 .introduction h3 {
-  font-size: 2.5rem;
+  font-size: 64px;
   font-weight: 600;
 }
 
 .introduction p {
-  font-size: 1rem;
+  margin-bottom: 60px;
+  font-size: 24px;
   font-weight: 400;
+  line-height: 30px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(25%, auto));
-  width:  1100px;
-  max-width: 100%;
+  margin-top: 60px;
+  width:  100%;
+  max-width: 1500px;
 }
-
-
 
 .center h2, .features h2, .team h2, .cta h2{
-  font-size: 3rem;
+  font-size: 96px;
   font-weight: 700;
   margin: 2rem 0 1rem 0
-}
-
-.introduction {
-  padding: 0 3rem 0 0;
 }
 
 .highlight1 {
@@ -213,19 +236,25 @@
 }
 
 .featureButtons {
-  display: flex wrap;
+  display: flex;
   justify-content: space-around;
   align-content: space-between;
   gap: 10px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 1rem auto 0;
 }
 
-.featureButtons button{
+.featureButtons button {
+  flex: 1;
   margin: 0 .5rem;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .features {
   display: flex;
-  padding: 3rem;
+  padding: 3rem 3rem 100px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -233,8 +262,15 @@
 }
 
 .featureTitle {
-  font-size: 2rem;
-  font-weight: 500
+  margin: 0 0 45px;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 80px;
+}
+
+.featureDesc {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 /* .curriculum {
@@ -249,6 +285,11 @@
   /* border: 6px solid #BBA0EC; */
   border-radius: 20px;
   /* background-color: rgba(179, 146, 229, 0.1) */
+}
+
+.tab > div,
+.tab > img {
+  flex: 1;
 }
 
 .curriculum {
@@ -285,8 +326,9 @@
 }
 
 .features h5, .team h5 {
-  font-size: 1.5rem;
+  font-size: 40px;
   font-weight: 400;
+  line-height: 50px;
   margin: 0 0 1rem 0;
 }
 
@@ -300,7 +342,7 @@
 }
 
 .profileText {
-  padding: 0 0 1rem 1rem
+  padding: 1rem;
 }
 
 .card span {
@@ -309,30 +351,27 @@
 }
 
 .card a {
+  margin-right: 20px;
   color: black;
-  font-size: 1.5rem
+  font-size: 40px;
 }
 
 .card h4 {
+  margin: 0;
+  font-size: 34px;
   font-weight: 600;
-  margin-bottom: 0.7rem;
+  line-height: 45px;
 }
 
 .image {
   border-radius: 10pt 10pt 0 0
 }
 
-.linkedin {
-  margin: 0 .5rem 0 0;
-}
-
 .card p {
   margin: 0;
   padding: 0 0 1rem 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .cta {
@@ -351,6 +390,12 @@
   margin-bottom: 4rem;
 }
 
+.contactForm h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 45px;
+}
+
 .footerText {
   display: flex;
   justify-content: center;
@@ -359,11 +404,26 @@
 
 
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)) url('../public/footer-background.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)) url('../public/footer-background.png'); */
+  /* background-repeat: no-repeat;
+  background-position: right bottom; */
+}
+
+.footerWrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.footerWrapper > div {
+  flex: 1;
+}
+
+.form {
+  width: 100%;
+  max-width: 560px;
 }
 
 .form form {
@@ -379,14 +439,19 @@
   background-color: #f6f6f6;
   border: none;
   border-radius: 5px;
-  padding: .5rem 1rem;
+  padding: 1.35rem 1rem;
   margin: .5rem 0 0 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .submitButton {
+  align-self: end;
+  width: auto !important;
+  padding: 1rem 4rem !important;
   background-color: #FE7F2D !important; 
   box-sizing: content-box;
+  font-size: 20px;
 }
 
 .slogan {
@@ -396,10 +461,23 @@
   flex-direction: column;
 }
 
+.slogan p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
 .footerMsg {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+}
+
+.footerMsg p {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .stores {
@@ -424,7 +502,6 @@
   border-radius:10px 10px 0 0;
   border-bottom: none;
   padding: 1rem 2rem;
-  font-size: 32;
   font-weight: 700;
   transition: all .2s ease-in-out;
 }
@@ -435,7 +512,6 @@
   border-radius:10px 10px 0 0;
   border-bottom: none;
   padding: 1rem 2rem;
-  font-size: 32;
   font-weight: 700;
   transition: all .2s ease-in-out;
 }
@@ -446,7 +522,6 @@
   border-radius:10px 10px 0 0;
   border-bottom: none;
   padding: 1rem 2rem;
-  font-size: 32;
   font-weight: 700;
   transition: all .2s ease-in-out;
 }
@@ -457,7 +532,6 @@
   border-radius:10px 10px 0 0;
   border-bottom: none;
   padding: 1rem 2rem;
-  font-size: 32;
   font-weight: 700;
   transition: all .2s ease-in-out;
 }
@@ -522,7 +596,8 @@
 
 .figma {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 800px;
+  width: 100%;
+  max-width: 1500px;
   height: 450px;
   margin-top: 3rem;
 }
@@ -532,9 +607,14 @@
   .logo h1, .navwrapper, .ctaButton  {
     display: none;
   }
- 
+
   .description, .center, .tab {
     flex-direction: column;
+  }
+
+  .description nav {
+    gap: 0;
+    margin-right: 0;
   }
 
   .tab {
@@ -548,19 +628,32 @@
     box-sizing: border-box;
   }
 
+  .center {
+    gap: 40px;
+  }
+
   .center, .features {
     padding: 1rem;
   }
 
+  .center h2, .features h2, .team h2, .cta h2{
+    font-size: 48px;
+    text-align: center;
+  }
+
   .grid {
-    grid-template-columns: repeat(2, minmax(25%, auto));
-    width:  1100px;
-    max-width: 100%;
+    grid-template-columns: repeat(1, minmax(25%, auto));
   }
 
   .contact {
     display: flex;
     flex-direction: column;
+  }
+
+  .featureTitle {
+    margin: 2rem 0;
+    font-size: 48px;
+    line-height: 1.3;
   }
 
   .curriculumButton {
@@ -589,7 +682,45 @@
   }
 
   .featureButtons {
+    flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  .footerWrapper {
+    flex-direction: column;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .slogan {
+    text-align: center;
+  }
+
+  .slogan p {
+    font-size: 24px;
+  }
+
+  .footerMsg {
+    margin-bottom: 40px;
+  }
+
+  .footerMsg p {
+    font-size: 24px;
+  }
+
+  .team {
+    padding: 3rem 1rem;
+  }
+
+  .features h5,
+  .team h5 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tab img {
+    width: auto;
+    max-width: 100%;
   }
 
 }
