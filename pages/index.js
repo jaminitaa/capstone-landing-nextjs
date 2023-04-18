@@ -654,8 +654,8 @@ export default function Home() {
                       />  
                 </div>
               </div>
-              <p className={`${styles.footerText} ${lexend.className} `}>© 2023 Team Dopamine. All Rights Reserved.</p>
               </div>
+              <p className={`${styles.footerText} ${lexend.className} `}>© 2023 Team Dopamine. All Rights Reserved.</p>
             </footer>
         </div>
     </>
