@@ -209,7 +209,7 @@ const Profile9 = () => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <MyLink href="https://yuenki.design">
+      <MyLink href="/">
         {isHovering ? (
           <Image src="/headshots-sport/yuenki.png"  className={styles.image} width={306} height={306} layout="responsive" object-fit= "contain"
          alt="yuenki"/>
@@ -268,7 +268,7 @@ export default function Home() {
                     <a href="#prototype">Prototype</a> 
                     <a href="#contact">Contact</a>
                     </nav>
-                    <button className={`${styles.button} ${lexend.className} ${styles.proposalButton}`} >View Proposal</button>
+                    <button className={`${styles.button} ${lexend.className} ${styles.proposalButton}`} ><Link href="https://drive.proton.me/urls/TGEZ4SWSMW#mcBRUgH6vznG" target="_blank">View Proposal</Link></button>
                   </div>
           </header>
            </div>
@@ -282,7 +282,7 @@ export default function Home() {
               </div>
               <Image
                 className={styles.collage}
-                src="/collage.svg"
+                src="/hero/coala-hero-image.png"
                 alt="collage"
                 width={700}
                 height={700}
@@ -604,7 +604,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={styles.cta} id="prototpe" >
+            <div className={styles.cta} id="prototype" >
               <h2 className={lexend.className}>Give <span className={styles.highlight4}>Coala a Try!</span></h2>
               <div className={lexend.className}>
               <iframe className={styles.figma} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwuxZxWDMT5G4R6dyflfBAr%2FDopamine-Figma%3Fpage-id%3D1726%253A138577%26node-id%3D1726-141368%26viewport%3D1417%252C683%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D1726%253A139111%26show-proto-sidebar%3D1" allowfullscreen></iframe>
@@ -627,11 +627,11 @@ export default function Home() {
             </div>
               <div className={styles.slogan}>
                 <Image
-                    src="/Logo.svg"
+                    src="/coala-footer-logo.png"
                     alt="Logo"
                     className={styles.vercelLogo}
-                    width={50}
-                    height={50}
+                    width={105}
+                    height={94}
                     priority
                   />
                 <p className={lexend.className}>Boost your coaching efficiency</p>

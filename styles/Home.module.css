@@ -22,7 +22,7 @@
 
 .center {
   gap: 140px;
-  padding: 100px 0;
+  padding: 100px 1rem;
 }
 
 .tab {
@@ -62,6 +62,10 @@
   border-bottom: 1px solid rgba(0,0,0,.1);
   box-shadow: 0 0 20px rgba(0,0,0,.1);
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .description {
@@ -77,7 +81,7 @@
   font-family: var(--font-mono);
 }
 
-.description a {
+.description nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +122,15 @@
 }
 
 .proposalButton {
+  display: flex;
   margin: 1rem 0  1rem 1rem;
+}
+
+.proposalButton a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .button:hover {
@@ -380,6 +392,12 @@
   margin-bottom: 4rem;
 }
 
+.contactForm h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 45px;
+}
+
 .footerText {
   display: flex;
   justify-content: center;
@@ -399,6 +417,12 @@
   width: 100%;
   max-width: 1500px;
   margin: auto;
+  padding-top: 50px;
+}
+
+.form {
+  width: 100%;
+  max-width: 560px;
 }
 
 .form form {
@@ -414,14 +438,19 @@
   background-color: #f6f6f6;
   border: none;
   border-radius: 5px;
-  padding: .5rem 1rem;
+  padding: 1.35rem 1rem;
   margin: .5rem 0 0 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .submitButton {
+  align-self: end;
+  width: auto !important;
+  padding: 1rem 4rem !important;
   background-color: #FE7F2D !important; 
   box-sizing: content-box;
+  font-size: 20px;
 }
 
 .slogan {
@@ -431,10 +460,23 @@
   flex-direction: column;
 }
 
+.slogan p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
 .footerMsg {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+}
+
+.footerMsg p {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .stores {
