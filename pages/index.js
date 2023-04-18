@@ -10,7 +10,6 @@ import { ImSphere } from "react-icons/im"
 import React, { useState } from 'react';
 // import YoutubeVideo from "./video.js"
 import ReactPlayer from 'react-player'
-import ScrollAnimation from 'react-animation-on-scroll'
 
 const lexend = Lexend({ subsets: ['latin'] })
 const TABS = ['curriculum', 'attendance', 'skillEvaluation', 'automatedReport', 'studentManagement']
