@@ -619,10 +619,10 @@ export default function Home() {
               <h2 className={lexend.className}>Get In Touch!</h2>
               <div className={styles.form}>
                 <form className={lexend.className}>
-                <input className={lexend.className} type="text" id="name" name="name" value="Name"></input>
-                <input className={lexend.className} type="text" id="telephone" name="lname" value="Telephone"></input>
-                <input className={lexend.className} type="text" id="email" name="email" value="Email"></input>
-                <input className={lexend.className} type="text" id="comment" name="comment" value="Comment"></input>
+                <input className={lexend.className} type="text" id="name" name="name" placeholder="Name"></input>
+                <input className={lexend.className} type="text" id="telephone" name="lname" placeholder="Telephone"></input>
+                <input className={lexend.className} type="text" id="email" name="email" placeholder="Email"></input>
+                <input className={lexend.className} type="text" id="comment" name="comment" placeholder="Comment"></input>
                 <input className={`${styles.button} ${lexend.className} ${styles.submitButton}`} type="submit" value="Submit"></input>
                 </form>
               </div>
